@@ -13,7 +13,6 @@ const users = express.Router();
 
 //create route for CRUD operations at endpoint "users"
 users.route("/").get(getAllUsers).post(createUser);
-
 users.route("/:id").get(getSingleUser).delete(deleteUser).put(updateUser);
 
 //export routes
